@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoVerse - Explore Blockchain in 3D</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Three.js Canvas (background) -->
+    <canvas id="bg"></canvas>
+
+    <!-- Main content overlay -->
+    <main>
+        <header>
+            <h1>Welcome to <span>CryptoVerse</span></h1>
+            <p class="subtitle">🚀 A playful 3D journey through blockchain technology</p>
+        </header>
+
+        <section class="intro">
+            <h2>What is Cryptocurrency?</h2>
+            <p>
+                Cryptocurrency is digital money that uses cryptography for security. 
+                Unlike traditional currencies, it operates on decentralized networks 
+                based on blockchain technology—a distributed ledger enforced by a 
+                network of computers.
+            </p>
+            <div class="model-container">
+                <div id="model-viewer"></div>
+                <p class="model-caption">3D Bitcoin Model - The first cryptocurrency</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Key Blockchain Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Decentralized</h3>
+                    <p>No single authority controls the network</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Transparent</h3>
+                    <p>All transactions are publicly verifiable</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Secure</h3>
+                    <p>Cryptography protects against fraud</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Immutable</h3>
+                    <p>Records cannot be altered after creation</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h2>How Blockchain Works</h2>
+            <div class="video-container">
+                <!-- Replace with your own video file -->
+                <video id="blockchain-video" controls poster="assets/videos/blockchain-poster.jpg">
+                    <source src="assets/videos/blockchain-explainer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2023 CryptoVerse | Learn about cryptocurrency in 3D</p>
+        </footer>
+    </main>
+
+    <!-- Three.js and other scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
