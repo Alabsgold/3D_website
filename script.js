@@ -104,6 +104,10 @@ function loadModel() {
     const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
     directionalLight.position.set(1, 1, 1);
     modelScene.add(directionalLight);
+
+    const light = new THREE.DirectionalLight(0xffffff, 1);
+    light.position.set(5, 5, 5);
+    scene.add(light);
     
     // Load GLB model
     const loader = new THREE.GLTFLoader();
